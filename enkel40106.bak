@@ -1,0 +1,105 @@
+EESchema Schematic File Version 4
+LIBS:faglunsj-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:40106 U?
+U 1 1 5D1F5463
+P 4700 3200
+F 0 "U?" H 4700 3517 50  0000 C CNN
+F 1 "40106" H 4700 3426 50  0000 C CNN
+F 2 "" H 4700 3200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF40106B.pdf" H 4700 3200 50  0001 C CNN
+	1    4700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D1F659C
+P 4950 2600
+F 0 "R?" V 4743 2600 50  0000 C CNN
+F 1 "R" V 4834 2600 50  0000 C CNN
+F 2 "" V 4880 2600 50  0001 C CNN
+F 3 "~" H 4950 2600 50  0001 C CNN
+	1    4950 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5D1F6945
+P 4450 2600
+F 0 "RV?" V 4335 2600 50  0000 C CNN
+F 1 "R_POT" V 4244 2600 50  0000 C CNN
+F 2 "" H 4450 2600 50  0001 C CNN
+F 3 "~" H 4450 2600 50  0001 C CNN
+	1    4450 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 3200 4200 2600
+Wire Wire Line
+	4200 2600 4300 2600
+Wire Wire Line
+	4200 3200 4400 3200
+Wire Wire Line
+	4600 2600 4700 2600
+Wire Wire Line
+	5100 2600 5200 2600
+Wire Wire Line
+	5200 2600 5200 3200
+Wire Wire Line
+	5200 3200 5000 3200
+Wire Wire Line
+	5200 3200 5300 3200
+Connection ~ 5200 3200
+Wire Wire Line
+	4200 3200 4200 3300
+Connection ~ 4200 3200
+$Comp
+L Device:C C?
+U 1 1 5D1FA01F
+P 4200 3450
+F 0 "C?" H 4315 3496 50  0000 L CNN
+F 1 "C" H 4315 3405 50  0000 L CNN
+F 2 "" H 4238 3300 50  0001 C CNN
+F 3 "~" H 4200 3450 50  0001 C CNN
+	1    4200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1FA31F
+P 4200 3700
+F 0 "#PWR?" H 4200 3450 50  0001 C CNN
+F 1 "GND" H 4205 3527 50  0000 C CNN
+F 2 "" H 4200 3700 50  0001 C CNN
+F 3 "" H 4200 3700 50  0001 C CNN
+	1    4200 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3700 4200 3600
+Wire Wire Line
+	4700 2600 4700 2350
+Wire Wire Line
+	4700 2350 4450 2350
+Wire Wire Line
+	4450 2350 4450 2450
+Connection ~ 4700 2600
+Wire Wire Line
+	4700 2600 4800 2600
+Text HLabel 5300 3200 2    50   Output ~ 0
+out
+$EndSCHEMATC

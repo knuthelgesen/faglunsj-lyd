@@ -1,0 +1,216 @@
+EESchema Schematic File Version 4
+LIBS:faglunsj-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:4070 U?
+U 1 1 5D55B449
+P 3800 1800
+F 0 "U?" H 3800 2125 50  0000 C CNN
+F 1 "4070" H 3800 2034 50  0000 C CNN
+F 2 "" H 3800 1800 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4070bms-77bms.pdf" H 3800 1800 50  0001 C CNN
+	1    3800 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1700 3150 1700
+Wire Wire Line
+	3500 1900 3150 1900
+Wire Wire Line
+	4100 1800 4500 1800
+$Comp
+L Timer:NE555 U?
+U 1 1 5D55C7E3
+P 3600 4600
+F 0 "U?" H 3600 4650 50  0000 C CNN
+F 1 "NE555" H 3600 4550 50  0000 C CNN
+F 2 "" H 3600 4600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 3600 4600 50  0001 C CNN
+	1    3600 4600
+	1    0    0    -1  
+$EndComp
+Text Notes 3300 1350 0    50   ~ 0
+Bruk en XOR chip for å "blande" signalene
+Wire Wire Line
+	4100 4600 4200 4600
+Wire Wire Line
+	4200 4600 4200 4800
+Wire Wire Line
+	4200 4800 4100 4800
+Wire Wire Line
+	4200 4800 4200 4900
+Connection ~ 4200 4800
+Wire Wire Line
+	4100 4400 4700 4400
+Wire Wire Line
+	3100 4400 2550 4400
+NoConn ~ 3100 4600
+$Comp
+L power:VCC #PWR?
+U 1 1 5D5F29B6
+P 2900 4700
+F 0 "#PWR?" H 2900 4550 50  0001 C CNN
+F 1 "VCC" H 2917 4873 50  0000 C CNN
+F 2 "" H 2900 4700 50  0001 C CNN
+F 3 "" H 2900 4700 50  0001 C CNN
+	1    2900 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4700 2900 4800
+Wire Wire Line
+	2900 4800 3100 4800
+Wire Wire Line
+	3600 5000 3600 5100
+Wire Wire Line
+	3600 4200 3600 3900
+Wire Wire Line
+	3600 3900 3500 3900
+Connection ~ 3600 3900
+$Comp
+L Device:C C?
+U 1 1 5D5F3A8D
+P 4200 5050
+F 0 "C?" H 4315 5096 50  0000 L CNN
+F 1 "0.1u" H 4315 5005 50  0000 L CNN
+F 2 "" H 4238 4900 50  0001 C CNN
+F 3 "~" H 4200 5050 50  0001 C CNN
+	1    4200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D5F3DF5
+P 3350 3900
+F 0 "C?" V 3098 3900 50  0000 C CNN
+F 1 "0.1u" V 3189 3900 50  0000 C CNN
+F 2 "" H 3388 3750 50  0001 C CNN
+F 3 "~" H 3350 3900 50  0001 C CNN
+	1    3350 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 3800 3600 3900
+Wire Wire Line
+	4200 5200 4200 5300
+$Comp
+L power:GND #PWR?
+U 1 1 5D5F6809
+P 4200 5300
+F 0 "#PWR?" H 4200 5050 50  0001 C CNN
+F 1 "GND" H 4205 5127 50  0000 C CNN
+F 2 "" H 4200 5300 50  0001 C CNN
+F 3 "" H 4200 5300 50  0001 C CNN
+	1    4200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D5F697F
+P 3600 5100
+F 0 "#PWR?" H 3600 4850 50  0001 C CNN
+F 1 "GND" H 3605 4927 50  0000 C CNN
+F 2 "" H 3600 5100 50  0001 C CNN
+F 3 "" H 3600 5100 50  0001 C CNN
+	1    3600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D5F6C94
+P 3100 4000
+F 0 "#PWR?" H 3100 3750 50  0001 C CNN
+F 1 "GND" H 3105 3827 50  0000 C CNN
+F 2 "" H 3100 4000 50  0001 C CNN
+F 3 "" H 3100 4000 50  0001 C CNN
+	1    3100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4000 3100 3900
+Wire Wire Line
+	3100 3900 3200 3900
+$Comp
+L power:+9V #PWR?
+U 1 1 5D5F7559
+P 3600 3800
+F 0 "#PWR?" H 3600 3650 50  0001 C CNN
+F 1 "+9V" H 3615 3973 50  0000 C CNN
+F 2 "" H 3600 3800 50  0001 C CNN
+F 3 "" H 3600 3800 50  0001 C CNN
+	1    3600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5F870B
+P 4200 3900
+F 0 "R?" V 4100 3850 50  0000 L CNN
+F 1 "22k" V 4200 3850 50  0000 L CNN
+F 2 "" V 4130 3900 50  0001 C CNN
+F 3 "~" H 4200 3900 50  0001 C CNN
+	1    4200 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4050 4200 4600
+Connection ~ 4200 4600
+Wire Wire Line
+	4200 3750 4200 3650
+$Comp
+L Device:R_POT RV?
+U 1 1 5D5F98CF
+P 4200 3400
+F 0 "RV?" V 4100 3500 50  0000 R CNN
+F 1 "500k" V 4200 3500 50  0000 R CNN
+F 2 "" H 4200 3400 50  0001 C CNN
+F 3 "~" H 4200 3400 50  0001 C CNN
+	1    4200 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3650 4450 3650
+Wire Wire Line
+	4450 3650 4450 3400
+Wire Wire Line
+	4450 3400 4350 3400
+Wire Wire Line
+	4200 3550 4200 3650
+Connection ~ 4200 3650
+Wire Wire Line
+	4200 3250 4200 3150
+$Comp
+L power:+9V #PWR?
+U 1 1 5D5FB0B8
+P 4200 3150
+F 0 "#PWR?" H 4200 3000 50  0001 C CNN
+F 1 "+9V" H 4215 3323 50  0000 C CNN
+F 2 "" H 4200 3150 50  0001 C CNN
+F 3 "" H 4200 3150 50  0001 C CNN
+	1    4200 3150
+	1    0    0    -1  
+$EndComp
+Text Label 2550 4400 0    50   ~ 0
+Input
+Text Label 4700 4400 0    50   ~ 0
+Output
+Text Label 4500 1800 0    50   ~ 0
+Output
+Text Label 3150 1700 0    50   ~ 0
+Input1
+Text Label 3150 1900 0    50   ~ 0
+Input2
+$EndSCHEMATC

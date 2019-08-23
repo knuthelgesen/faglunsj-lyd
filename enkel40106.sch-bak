@@ -1,0 +1,330 @@
+EESchema Schematic File Version 4
+LIBS:faglunsj-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:40106 U?
+U 1 1 5D1F5463
+P 4700 3200
+F 0 "U?" H 4700 3517 50  0000 C CNN
+F 1 "40106" H 4700 3426 50  0000 C CNN
+F 2 "" H 4700 3200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF40106B.pdf" H 4700 3200 50  0001 C CNN
+	1    4700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D1F659C
+P 4950 2600
+F 0 "R?" V 4850 2600 50  0000 C CNN
+F 1 "4.7k" V 4950 2600 50  0000 C CNN
+F 2 "" V 4880 2600 50  0001 C CNN
+F 3 "~" H 4950 2600 50  0001 C CNN
+	1    4950 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5D1F6945
+P 4450 2600
+F 0 "RV?" V 4335 2600 50  0000 C CNN
+F 1 "1M" V 4450 2600 50  0000 C CNN
+F 2 "" H 4450 2600 50  0001 C CNN
+F 3 "~" H 4450 2600 50  0001 C CNN
+	1    4450 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 3200 4200 2600
+Wire Wire Line
+	4200 2600 4300 2600
+Wire Wire Line
+	4200 3200 4400 3200
+Wire Wire Line
+	4600 2600 4700 2600
+Wire Wire Line
+	5100 2600 5200 2600
+Wire Wire Line
+	5200 2600 5200 3200
+Wire Wire Line
+	5200 3200 5000 3200
+Connection ~ 5200 3200
+Wire Wire Line
+	4200 3200 4200 3300
+Connection ~ 4200 3200
+$Comp
+L Device:C C?
+U 1 1 5D1FA01F
+P 4200 3450
+F 0 "C?" H 4315 3496 50  0000 L CNN
+F 1 "0.022u" H 4315 3405 50  0000 L CNN
+F 2 "" H 4238 3300 50  0001 C CNN
+F 3 "~" H 4200 3450 50  0001 C CNN
+	1    4200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D1FA31F
+P 4200 3700
+F 0 "#PWR?" H 4200 3450 50  0001 C CNN
+F 1 "GND" H 4205 3527 50  0000 C CNN
+F 2 "" H 4200 3700 50  0001 C CNN
+F 3 "" H 4200 3700 50  0001 C CNN
+	1    4200 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3700 4200 3600
+Wire Wire Line
+	4700 2600 4700 2350
+Wire Wire Line
+	4700 2350 4450 2350
+Wire Wire Line
+	4450 2350 4450 2450
+Connection ~ 4700 2600
+Wire Wire Line
+	4700 2600 4800 2600
+Text HLabel 8800 3200 2    50   Output ~ 0
+out
+$Comp
+L 4xxx:40106 U?
+U 2 1 5D55153A
+P 7200 3200
+F 0 "U?" H 7200 3517 50  0000 C CNN
+F 1 "40106" H 7200 3426 50  0000 C CNN
+F 2 "" H 7200 3200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF40106B.pdf" H 7200 3200 50  0001 C CNN
+	2    7200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D552112
+P 6800 3450
+F 0 "C?" H 6915 3496 50  0000 L CNN
+F 1 "0.1u" H 6915 3405 50  0000 L CNN
+F 2 "" H 6838 3300 50  0001 C CNN
+F 3 "~" H 6800 3450 50  0001 C CNN
+	1    6800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D552B98
+P 6800 3700
+F 0 "#PWR?" H 6800 3450 50  0001 C CNN
+F 1 "GND" H 6805 3527 50  0000 C CNN
+F 2 "" H 6800 3700 50  0001 C CNN
+F 3 "" H 6800 3700 50  0001 C CNN
+	1    6800 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5531DB
+P 7550 2600
+F 0 "R?" V 7450 2600 50  0000 C CNN
+F 1 "10k" V 7550 2600 50  0000 C CNN
+F 2 "" V 7480 2600 50  0001 C CNN
+F 3 "~" H 7550 2600 50  0001 C CNN
+	1    7550 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5D5538B6
+P 7050 2600
+F 0 "RV?" V 6935 2600 50  0000 C CNN
+F 1 "100k" V 7050 2600 50  0000 C CNN
+F 2 "" H 7050 2600 50  0001 C CNN
+F 3 "~" H 7050 2600 50  0001 C CNN
+	1    7050 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 3300 6800 3200
+Wire Wire Line
+	6800 3200 6900 3200
+Wire Wire Line
+	6800 3600 6800 3700
+Wire Wire Line
+	7500 3200 7800 3200
+Wire Wire Line
+	7800 3200 7800 2600
+Wire Wire Line
+	7050 2450 7050 2350
+Wire Wire Line
+	7050 2350 7300 2350
+Wire Wire Line
+	7300 2350 7300 2600
+Wire Wire Line
+	7300 2600 7200 2600
+Wire Wire Line
+	7300 2600 7400 2600
+Connection ~ 7300 2600
+Wire Wire Line
+	7800 2600 7700 2600
+Wire Wire Line
+	6900 2600 6800 2600
+Wire Wire Line
+	6800 2600 6800 3200
+Connection ~ 6800 3200
+Connection ~ 7800 3200
+$Comp
+L Device:D D?
+U 1 1 5D566A22
+P 6000 3200
+F 0 "D?" H 6000 3416 50  0000 C CNN
+F 1 "D" H 6000 3325 50  0000 C CNN
+F 2 "" H 6000 3200 50  0001 C CNN
+F 3 "~" H 6000 3200 50  0001 C CNN
+	1    6000 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3200 5850 3200
+Wire Wire Line
+	6150 3200 6800 3200
+Wire Wire Line
+	7800 3200 8800 3200
+$Comp
+L 4xxx:40106 U?
+U 2 1 5D56B2D3
+P 4800 6000
+F 0 "U?" H 4800 6317 50  0000 C CNN
+F 1 "40106" H 4800 6226 50  0000 C CNN
+F 2 "" H 4800 6000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/HEF40106B.pdf" H 4800 6000 50  0001 C CNN
+	2    4800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D56B2D9
+P 4400 6250
+F 0 "C?" H 4515 6296 50  0000 L CNN
+F 1 "0.1u" H 4515 6205 50  0000 L CNN
+F 2 "" H 4438 6100 50  0001 C CNN
+F 3 "~" H 4400 6250 50  0001 C CNN
+	1    4400 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D56B2DF
+P 4400 6500
+F 0 "#PWR?" H 4400 6250 50  0001 C CNN
+F 1 "GND" H 4405 6327 50  0000 C CNN
+F 2 "" H 4400 6500 50  0001 C CNN
+F 3 "" H 4400 6500 50  0001 C CNN
+	1    4400 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D56B2E5
+P 5150 5400
+F 0 "R?" V 5050 5400 50  0000 C CNN
+F 1 "10k" V 5150 5400 50  0000 C CNN
+F 2 "" V 5080 5400 50  0001 C CNN
+F 3 "~" H 5150 5400 50  0001 C CNN
+	1    5150 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5D56B2EB
+P 4650 5400
+F 0 "RV?" V 4535 5400 50  0000 C CNN
+F 1 "100k" V 4650 5400 50  0000 C CNN
+F 2 "" H 4650 5400 50  0001 C CNN
+F 3 "~" H 4650 5400 50  0001 C CNN
+	1    4650 5400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 6100 4400 6000
+Wire Wire Line
+	4400 6000 4500 6000
+Wire Wire Line
+	4400 6400 4400 6500
+Wire Wire Line
+	5100 6000 5400 6000
+Wire Wire Line
+	5400 6000 5400 5400
+Wire Wire Line
+	4650 5250 4650 5150
+Wire Wire Line
+	4650 5150 4900 5150
+Wire Wire Line
+	4900 5150 4900 5400
+Wire Wire Line
+	4900 5400 4800 5400
+Wire Wire Line
+	4900 5400 5000 5400
+Connection ~ 4900 5400
+Wire Wire Line
+	5400 5400 5300 5400
+Wire Wire Line
+	4500 5400 4400 5400
+Wire Wire Line
+	4400 5400 4400 6000
+Connection ~ 4400 6000
+Connection ~ 5400 6000
+Wire Wire Line
+	3750 6000 4400 6000
+Wire Wire Line
+	5400 6000 6400 6000
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 5D56FDE3
+P 4800 4700
+F 0 "Q?" V 5035 4700 50  0000 C CNN
+F 1 "2N3904" V 5126 4700 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5000 4625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4800 4700 50  0001 L CNN
+	1    4800 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D5828DE
+P 4300 4400
+F 0 "R?" V 4200 4400 50  0000 C CNN
+F 1 "100k" V 4300 4400 50  0000 C CNN
+F 2 "" V 4230 4400 50  0001 C CNN
+F 3 "~" H 4300 4400 50  0001 C CNN
+	1    4300 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 4400 4800 4400
+Wire Wire Line
+	4800 4400 4800 4500
+Wire Wire Line
+	4600 4800 4400 4800
+Wire Wire Line
+	4400 4800 4400 5400
+Connection ~ 4400 5400
+Wire Wire Line
+	5000 4800 5400 4800
+Wire Wire Line
+	5400 4800 5400 5400
+Connection ~ 5400 5400
+Wire Wire Line
+	4150 4400 3850 4400
+$EndSCHEMATC
